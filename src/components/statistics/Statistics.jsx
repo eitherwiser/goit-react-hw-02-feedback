@@ -15,10 +15,10 @@ export default function Statistics(
     ${200 - positivePercentage},
     ${positivePercentage + 50},
     50,
-    ${((({ neutral }.neutral / { total }.total) * 100) > 60) ?
+    ${((({neutral}.neutral / {total}.total) * 100) > 60) ?
       0.4 :
-      ((({ neutral }.neutral / { total }.total) * 100) > 20) ?
-        (1 - (({ neutral }.neutral / { total }.total) * 100) * 0.01) :
+      ((({neutral}.neutral / {total}.total) * 100) > 10) ?
+        (1 - (({neutral}.neutral / {total}.total) * 100) * 0.01) :
         1})`;
   
   return (
