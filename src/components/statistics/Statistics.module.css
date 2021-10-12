@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+  list-style: none;
+  padding: 0 20px 0 20px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+.good {
+  color: rgb(100, 150, 50);
+}
+
+.neutral {
+  color: rgb(150, 150, 150);
+}
+
+.bad {
+  color: rgb(200, 50, 50);
+}
