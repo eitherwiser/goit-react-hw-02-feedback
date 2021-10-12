@@ -56,9 +56,7 @@ export default function Statistics(
       
       </ul>
 
-      {({ positivePercentage } === 0) ?
-        (<p><span> There are no feedbacks here yet.</span></p>) :
-        ({ good }.good === { total }.total) ?
+      {({ good }.good === { total }.total) ?
           (<p style={{ color: textColor }}><span>{positivePercentage}%</span> positive!</p>) :
             ({ good }.good === 0) ?
           (<p style={{color: textColor }} > There are no positive feedbacks here.</p>):

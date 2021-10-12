@@ -55,7 +55,7 @@ class App extends React.Component {
 
             </>
           ) : (
-            <Notification message="Is no any feedbacks here yet" />
+            <Notification message="There are no feedbacks here yet." />
           )}
         </Section>
       </>
