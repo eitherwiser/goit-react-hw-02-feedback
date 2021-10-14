@@ -6,6 +6,7 @@ import FeedbackOptions from "./components/feedback/FeedbackOptions";
 import Notification from "./components/notification/Notification";
 
 class App extends React.Component {
+
   state = {
     good: 0,
     neutral: 0,

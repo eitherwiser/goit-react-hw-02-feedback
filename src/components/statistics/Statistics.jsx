@@ -15,11 +15,12 @@ export default function Statistics(
     ${200 - positivePercentage},
     ${positivePercentage + 50},
     50,
-    ${((({neutral}.neutral / {total}.total) * 100) > 60) ?
-      0.4 :
-      ((({neutral}.neutral / {total}.total) * 100) > 10) ?
-        (1 - (({neutral}.neutral / {total}.total) * 100) * 0.01) :
-        1})`;
+    ${(({ neutral }.neutral / { total }.total) * 100) > 60
+      ? 0.4
+        : (({ neutral }.neutral / { total }.total) * 100) > 10
+        ? 1 - (({ neutral }.neutral / { total }.total) * 100) * 0.01
+          : 1
+    })`;
   
   return (
 
@@ -56,11 +57,12 @@ export default function Statistics(
       
       </ul>
 
-      {({ good }.good === { total }.total) ?
-          (<p style={{ color: textColor }}><span>{positivePercentage}%</span> positive!</p>) :
-            ({ good }.good === 0) ?
-          (<p style={{color: textColor }} > There are no positive feedbacks here.</p>):
-          (<p style={{color: textColor }} ><span>{positivePercentage}%</span> feedbacks are positive of total <span>{total}</span>.</p>)
+      {
+        {good}.good === {total}.total
+          ? <p style={{color: textColor}}><span>{positivePercentage}%</span> positive!</p>
+          : {good}.good === 0
+            ? <p style={{color: textColor}} > There are no positive feedbacks here.</p>
+            : <p style={{color: textColor}} ><span>{positivePercentage}%</span> feedbacks are positive of total <span>{total}</span>.</p>
       }
       </>
   );
